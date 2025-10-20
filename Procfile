@@ -1,1 +1,1 @@
-web: gunicorn string_analyzer_project.wsgi:application
+web: gunicorn --chdir string_analyzer_project string_analyzer_project.wsgi:application
