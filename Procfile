@@ -1,1 +1,2 @@
 web: gunicorn --chdir string_analyzer_project string_analyzer_project.wsgi:application
+release: python manage.py migrate
