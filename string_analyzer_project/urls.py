@@ -22,5 +22,6 @@ urlpatterns = [
     path('', RedirectView.as_view(url='/strings/', permanent=False)),
 
     path('admin/', admin.site.urls),
-    path('strings/', include('analyzer_api.urls'))
+    path('strings/', include('analyzer_api.urls')),
+    path('strings', include('analyzer_api.urls')),
 ]
